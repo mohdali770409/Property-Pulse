@@ -61,30 +61,30 @@ const Message = ({ message }) => {
       )}
       <h2 className='text-xl mb-4'>
         <span className='font-bold'>Property Inquiry:</span>{' '}
-        {message.property.name}
+        {message?.property?.name}
       </h2>
-      <p className='text-gray-700'>{message.body}</p>
+      <p className='text-gray-700'>{message?.body}</p>
 
       <ul className='mt-4'>
         <li>
-          <strong>Name:</strong> {message.sender.username}
+          <strong>Name:</strong> {message?.sender?.username}
         </li>
 
         <li>
           <strong>Reply Email:</strong>{' '}
-          <a href={`mailto:${message.email}`} className='text-blue-500'>
-            {message.email}
+          <a href={`mailto:${message?.email}`} className='text-blue-500'>
+            {message?.email}
           </a>
         </li>
         <li>
           <strong>Reply Phone:</strong>{' '}
-          <a href={`tel:${message.phone}`} className='text-blue-500'>
-            {message.phone}
+          <a href={`tel:${message?.phone}`} className='text-blue-500'>
+            {message?.phone}
           </a>
         </li>
         <li>
           <strong>Received:</strong>{' '}
-          {new Date(message.createdAt).toLocaleString()}
+          {new Date(message?.createdAt).toLocaleString()}
         </li>
       </ul>
       <button
