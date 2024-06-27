@@ -2,29 +2,6 @@
 
 > A web application to help you find your next rental property.
 
-This is the main project from my [Next 14 From Scratch Course](https://www.traversymedia.com/nextjs-from-scratch)
-
-## Important notes
-
-If you are following along with the course and running into issues, then please
-take the time to read the README in the [bugfix branch](https://github.com/bradtraversy/property-pulse/tree/bugfix)
-as this solves many common problems.
-
-There is also a [refactor branch](https://github.com/bradtraversy/property-pulse/tree/refactor)
-where the code has been heavily refactored to stay true to NextJS recommended
-best practices by using querying the database directly from our server
-components for data fetching, and performing updates and adding data using
-server actions.  
-The refactor also makes deployment a fair bit smoother.  
-The course is currently being re recorded for a re release using the code in
-the refactor branch.
-
-The `_theme_files` folder contains the pure HTML files with Tailwind classes.
-
-<img src="/public/images/screen.jpg" />
-
-## Features
-
 Here are some of the current features that Property Pulse has:
 
 - [x] User authentication with Google & Next Auth
@@ -36,7 +13,6 @@ Here are some of the current features that Property Pulse has:
 - [x] Property search
 - [x] Internal messages with 'unread' notifications
 - [x] Photoswipe image gallery
-- [x] Mapbox maps
 - [x] Toast notifications
 - [x] Property bookmarking / saved properties
 - [x] Property sharing to social media
@@ -55,9 +31,6 @@ Property Pulse uses the following technologies:
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [Photoswipe](https://photoswipe.com/)
 - [Cloudinary](https://cloudinary.com/)
-- [Mapbox](https://www.mapbox.com/)
-- [React Map GL](https://visgl.github.io/react-map-gl/)
-- [React Geocode](https://www.npmjs.com/package/react-geocode)
 - [React Spinners](https://www.npmjs.com/package/react-spinners)
 - [React Toastify](https://fkhadra.github.io/react-toastify/)
 - [React Share](https://www.npmjs.com/package/react-share)
@@ -70,7 +43,6 @@ Property Pulse uses the following technologies:
 - MongoDB Atlas account and a cluster. Sign up and create a cluster at [MongoDB](https://www.mongodb.com/)
 - Cloudinary account. Sign up at [Cloudinary](https://cloudinary.com/)
 - Google console account. Sign up at [Google Cloud](https://console.cloud.google.com/)
-- Mapbox account. Sign up at [Mapbox](https://www.mapbox.com/)
 
 ### `.env` File
 
@@ -100,6 +72,3 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
